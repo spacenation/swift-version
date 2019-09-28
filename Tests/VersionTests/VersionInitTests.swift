@@ -1,15 +1,17 @@
 import XCTest
 @testable import Version
 
-final class VersionTests: XCTestCase {
-    func testExample() {
+final class VersionInitTests: XCTestCase {
+    
+    func testVersionInits() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(Version().text, "Hello, World!")
+        XCTAssert(Version(0, 0, 0) == Version.zero)
+        XCTAssert(Version(1, 2, 3) == Version("1.2.3"))
     }
 
     static var allTests = [
-        ("testExample", testExample),
+        ("testVersionInits", testVersionInits),
     ]
 }
