@@ -3,7 +3,7 @@
 ## Version
 Semantic versioning v 2.0.0
 ```swift
-Version("1.0.0-alpha.beta") < Version("1.0.0-beta")
+Version("1.0.0-alpha") < Version("1.0.0-beta")
 ```
 
 ## Requirements
