@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Version: Equatable {
+public struct Version: Equatable, Sendable {
 
     /// The major version according to the semantic versioning standard.
     public let major: Int
